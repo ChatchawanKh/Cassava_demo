@@ -142,7 +142,13 @@ option{
     }
   }
 
-
+@media (max-width: 550px) {
+    #downloadLinkContainer {
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+    }
+}
 
 
 
