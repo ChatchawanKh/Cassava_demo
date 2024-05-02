@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Kanit', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    transition: all .42s ease;
+}
+
+html {
+    overflow: auto;
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+
+body {
+    text-align: center;
+    max-width: 100%;
+    height: 100%;
+    background-image: url(img/bg2.jpg);
+    background-size: cover;
+}
+
+
+.logo img{
+    max-width: 300px;
+    height: auto;
+}
+.navmenu{
+    display: flex;
+}
+.navmenu a{
+    color: #2c2c2c;
+    font-size: 16px;
+    padding: 10px 20px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+.navmenu a:hover{
+    color: #43873C;
+}
+.nav-icon{
+    display: flex;
+    align-items: center;
+}
+#menu-icon{
+    font-size: 25px;
+    color: #2c2c2c;
+    z-index: 10001;
+    cursor: pointer;
+}
+
+.download{
+    position: fixed;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.download h1{
+    /* margin-top: 10%; */
+    font-size: 50px;
+    color: #000000;
+}
+
+#downloadForm label{
+    font-size: 25px;
+    font-weight: 600;
+    color: #000000;
+}
+#downloadForm option{
+    font-size: 25px;
+}
+#downloadForm #Date, #Province{
+    font-size: 25px;
+}
+
+#downloadForm button {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    
+}
+
+#downloadLinkContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+#Date:hover,
+#Province:hover {
+    background-color: #adc98e;
+}
+
+option{
+    background-color: #ffffff;
+}
+
+@media(max-width:890px){
+    header{
+        padding: 20px 3%;
+        transition: .4s;
+    }
+}
+
+@media(max-width:750px){
+    .navmenu{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 300px;
+        height: 130vh;
+        background: #edfff1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 120px 30px;
+        transition: all .42s;
+    }
+    .navmenu a{
+        display: block;
+        margin: 18px 0;
+    }
+    .navmenu.open{
+        right: 0;
+    }
+}
+
+@media (min-width: 750px) {
+    .nav-icon {
+      display: none;
+    }
+  }
+
+@media (max-width: 550px) {
+    #downloadLinkContainer {
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+    }
+}
+
+
+
+

@@ -1,0 +1,148 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--   -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Download</title>
+	
+	
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z685H62R0V"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-Z685H62R0V');
+	</script>
+	
+  </head>
+  <body>
+    <header>
+      <!-- LogoImage 
+      <a href="#" class="logo"><img src="img/logo.png" /> </a>
+	  -->
+
+      <!-- NavMenu 
+      <ul class="navmenu">
+        <li><a href="#">เกี่ยวกับระบบ</a></li>
+        <li><a href="#">ติดต่อเรา</a></li>
+        <li><a href="#">คู่มือ</a></li>
+        <li><a href="#">เข้าสู่ระบบ</a></li>
+      </ul> -->
+		
+      <div class="nav-icon">
+        <div class="bx bx-menu" id="menu-icon"></div>
+      </div>
+    </header>
+
+    <div class="main">
+    <section class="download">
+      <h1>ดาวน์โหลดข้อมูล มันสำปะหลัง</h1><br></br>
+      <!-- Form for individual file type download -->
+      <form id="downloadForm" action="#" method="post">
+        <label for="Date">เดือน/ปี:</label>
+        <select name="Date" id="Date">
+          <option value="">-- เลือกเดือน/ปี --</option>
+          <option value="2023|12|31|ธันวาคม 2566">ธันวาคม 2566</option>
+          <option value="2024|01|31|มกราคม 2567">มกราคม 2567</option>
+          <option value="2024|02|29|กุมภาพันธ์ 2567">กุมภาพันธ์ 2567</option>
+          <option value="2024|03|31|มีนาคม 2567">มีนาคม 2567</option>
+          <!--<option value="2024|04|30|เมษายน 2567">เมษายน 2567</option>
+          <option value="2024|05|31|พฤษภาคม 2567">พฤษภาคม 2567</option>
+          <option value="2024|06|31|มิถุนายน 2567">มิถุนายน 2567</option>
+          <option value="2024|07|31|กรกฎาคม 2567">กรกฎาคม 2567</option>
+          <option value="2024|08|31|สิงหาคม 2567">สิงหาคม 2567</option>
+          <option value="2024|09|31|กันยายน 2567">กันยายน 2567</option>
+          <option value="2024|10|31|ตุลาคม 2567">ตุลาคม 2567</option>
+          <option value="2024|11|31|พฤศจิกายน 2567">พฤศจิกายน 2567</option>
+          <option value="2024|12|31|พฤศจิกายน 2567">ธันวาคม 2567</option> -->
+
+          <!-- Add more versions as needed -->
+        </select>
+
+        <br /><br />
+
+        <label for="Province">จังหวัด:</label>
+        <select name="Province" id="Province">
+          <option value="">-- เลือกจังหวัด --</option>
+          <option value="00|TH">ภาพรวม 77 จังหวัด</option>
+          <option value="16|Lop Buri">ลพบุรี</option>
+          <option value="18|Chai Nat">ชัยนาท</option>
+          <option value="19|Saraburi">สระบุรี</option>
+          <option value="20|Chon Buri">ชลบุรี</option>
+          <option value="21|Rayong">ระยอง</option>
+          <option value="22|Chanthaburi">จันทบุรี</option>
+          <option value="24|Chachoengsao">ฉะเชิงเทรา</option>
+          <option value="25|Prachin Buri">ปราจีนบุรี</option>
+          <option value="26|Nakhon Nayok">นครนายก</option>
+          <option value="27|Sa kaeo">สระแก้ว</option>
+          <option value="30|Nakhon Ratchasima">นครราชสีมา</option>
+          <option value="31|Buri Ram">บุรีรัมย์</option>
+          <option value="32|Surin">สุรินทร์</option>
+          <option value="33|Si Sa Ket">ศรีสะเกษ</option>
+          <option value="34|Ubon Ratchathani">อุบลราชธานี</option>
+          <option value="35|Yasothon">ยโสธร</option>
+          <option value="36|Chaiyaphum">ชัยภูมิ</option>
+          <option value="37|Amnat Charoen">อำนาจเจริญ</option>
+          <option value="38|Bueng Kan">บึงกาฬ</option>
+          <option value="39|Nong Bua Lam Phu">หนองบัวลำภู</option>
+          <option value="40|Khon Kaen">ขอนแก่น</option>
+          <option value="41|Udon Thani">อุดรธานี</option>
+          <option value="42|Loei">เลย</option>
+          <option value="43|Nong Khai">หนองคาย</option>
+          <option value="44|Maha Sarakham">มหาสารคาม</option>
+          <option value="45|Roi Et">ร้อยเอ็ด</option>
+          <option value="46|Kalasin">กาฬสินธุ์</option>
+          <option value="47|Sakon Nakhon">สกลนคร</option>
+          <option value="48|Nakhon Phanom">นครพนม</option>
+          <option value="49|Mukdahan">มุกดาหาร</option>
+          <option value="50|Chiang Mai">เชียงใหม่</option>
+          <option value="51|Lamphun">ลำพูน</option>
+          <option value="52|Lampang">ลำปาง</option>
+          <option value="53|Uttaradit">อุตรดิตถ์</option>
+          <option value="54|Phrae">แพร่</option>
+          <option value="55|Nan">น่าน</option>
+          <option value="56|Phayao">พะเยา</option>
+          <option value="57|Chiang Rai">เชียงราย</option>
+          <option value="60|Nakhon Sawan">นครสวรรค์</option>
+          <option value="61|Uthai Thani">อุทัยธานี</option>
+          <option value="62|Kamphaeng Phet">กำแพงเพชร</option>
+          <option value="63|Tak">ตาก</option>
+          <option value="64|Sukhothai">สุโขทัย</option>
+          <option value="65|Phitsanulok">พิษณุโลก</option>
+          <option value="66|Phichit">พิจิตร</option>
+          <option value="67|Phetchabun">เพชรบูรณ์</option>
+          <option value="70|Ratchaburi">ราชบุรี</option>
+          <option value="71|Kanchanaburi">กาญจนบุรี</option>
+          <option value="72|Suphan Buri">สุพรรณบุรี</option>
+          <option value="76|Phetchaburi">เพชรบุรี</option>
+          <option value="77|Prachuap Khiri Khan">ประจวบคีรีขันธ์</option>
+        </select>
+      </form>
+      <div id="downloadLinkContainer"></div>
+    </section>
+    </div>
+  </body>
+  <script src="api_download.js"></script>
+</html>
