@@ -360,3 +360,27 @@ header.sticky{
         font-size: 12px; /* Further reduce paragraph font size for very small screens */
     }
 }
+
+@media (max-width: 550px) {
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 550px) {
+    .feature {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
+
+
+/* contact-info */
