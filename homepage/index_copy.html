@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Exter Libraly -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <link rel="stylesheet" href="./style - สำเนา.css" />
+    <title>GIS สำหรับธุรกิจมันสำปะหลัง</title>
+	
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z685H62R0V"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-Z685H62R0V');
+	</script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <!-- LogoImage -->
+      <a href="#" class="logo"><img src="image/logo.png" /> </a>
+
+      <!-- NavMenu -->
+      <ul class="navmenu">
+        <li><a href="#about-system">เกี่ยวกับโครงการ</a></li>
+        <li><a href="#contact">ติดต่อเรา</a></li>
+        <li><a href="https://gistdaportal.gistda.or.th/portal/sharing/rest/content/items/4054a37092634f4497f5d166c81f3d20/data" target="_blank">คู่มือ</a></li>
+        <li>
+          <a
+            href="https://gistdaportal.gistda.or.th/portal/apps/experiencebuilder/experience/?id=20635c55f935469994959c40e3e89506"
+            >เข้าสู่ระบบ</a
+          >
+        </li>
+      </ul>
+
+      <div class="nav-icon">
+        <div class="bx bx-menu" id="menu-icon"></div>
+      </div>
+    </header>
+
+    <!-- FirstSection(MainPage) -->
+    <section class="main-home">
+      <div class="main-text">
+        <h2>GISTDA</h2>
+        <h1>
+          ระบบสารสนเทศ <br />
+          สำหรับธุรกิจมันสำปะหลัง
+        </h1>
+        <a
+          href="https://gistdaportal.gistda.or.th/portal/apps/experiencebuilder/experience/?id=20635c55f935469994959c40e3e89506"
+          class="main-btn"
+          >เริ่มต้นใช้งาน <i class="bx bx-chevrons-right"></i>
+        </a>
+      </div>
+
+      <div class="down-arrow" id="about-system">
+        <a href="#bottom" class="down"><i class="bx bx-down-arrow-alt"></i></a>
+      </div>
+    </section>
+	
+    <!-- SecondSection(AboutOurSystem) -->
+    <section class="about-system">
+      <div class="system">
+        <h3>ที่มาของโครงการ</h3>
+        <p>
+          &emsp;&emsp;&emsp;มันสำปะหลังเป็นหนึ่งในพืชเศรษฐกิจที่สาคัญของประเทศไทย
+          เป็นวัตถุดิบในอุตสาหกรรมการผลิตแป้งมัน
+          ในปัจจุบันประเทศไทยสมาคมเป็นอันดับหนึ่งในการส่งออกสินค้ามันสำปะหลัง
+          โดยมีพื้นที่ปลูกแป้งมันสำปะหลังทั้งประเทศ 10 ล้านไร่
+          ซึ่งกระจายอยู่เกือบทุกภาคของประเทศ และ 7-8 แสนครอบครัว
+          ข้อมูลจากดาวเทียมเป็นเทคโนโลยีที่สามารถประเมินพื้นที่ปลูกและประเมินอายุได้อย่างมีประสิทธิภาพและทันต่อสถานการณ์ปัจจุบัน
+          ซึ่งจะสามารถต่อยอดไปถึงการประเมินปริมาณผลผลิตมันสำปะหลังให้ใกล้เคียงความเป็นจริงได้มากที่สุด
+        </p>
+      </div>
+
+      <div class="slider">
+        <div class="list">
+          <div class="item">
+            <img src="image/slide/1.jpg" alt="" />
+          </div>
+          <div class="item">
+            <img src="image/slide/2.jpg" alt="" />
+          </div>
+          <div class="item">
+            <img src="image/slide/3.jpg" alt="" />
+          </div>
+          <div class="item">
+            <img src="image/slide/4.jpg" alt="" />
+          </div>
+          <div class="item">
+            <img src="image/slide/5.jpg" alt="" />
+          </div>
+        </div>
+        <div class="buttons">
+          <button id="prev"></button>
+          <button id="next"></button>
+        </div>
+
+        <ul class="dots">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ThridSection(Feature) -->
+    <section class="feature">
+      <div class="up-center-text">
+        <h1>ฟีเจอร์บนระบบ</h1> 
+      </div>
+
+      <div class="feature-card">
+        <div class="card">
+          <img src="image/11.png" alt="" />
+          <h4>แผนที่ออนไลน์และแดชบอร์ด</h4>
+          <p>
+            แผนที่ออนไลน์แสดงพื้นที่ปลูกมันสำปะหลังจากดาวเทียม
+            และข้อมูลภัยพิบัติที่ส่งผลกับทางด้านการเกษตร เช่น
+            พื้นที่เสี่ยงภัยแล้ง พื้นที่เสี่ยงน้ำท่วม
+            ดัชนีความแตกต่างพืชพรรณเป็นต้น และ
+            สรุปสถานการณ์พื้นที่เพาะปลูกมันสำปะหลังในรูปแบบของ Dashboard
+          </p>
+        </div>
+        <div class="card">
+          <img src="image/13.png" alt="" />
+          <h4>ค้นหาแปลงมันสำปะหลังในระยะรัศมี</h4>
+          <p>
+            เครื่องมือคำนวนพื้นที่เพาะปลูกมันสำปะหลัง บริเวณรอบจุดที่สนใจ (POI)
+            ตามรัศมีที่กำหนด
+          </p>
+        </div>
+        <div class="card">
+          <img src="image/15.png" alt="" />
+          <h4>ดาวน์โหลดข้อมูลแปลงมันสำปะหลัง</h4>
+          <p>
+            ดาวโหลดข้อมูลพื้นที่ปลูกมันสำปะหลังจากดาวเทียม ในรูปแบบแผนที่ PDF
+            สรุปสถานการณ์พื้นที่เพาะปลูก Exel และ ข้อมูลเชิงพื้นที่ Shapefile
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="contactContainer">
+      <section class="contact" id="contact">
+        <div class="contact-info">
+          <div class="first-info">
+            <img src="image/logo.png" alt="" />
+            <br></br>
+    
+            <p>
+              <b>ที่อยู่:</b> สำนักงานพัฒนาเทคโนโลยีอวกาศและภูมิสารสนเทศ
+              (องค์การมหาชน) <br />
+              สำนักงานใหญ่ (ศูนย์ราชการเฉลิมพระเกียรติ 80 พรรษา 5 ธันวาคม 2550)
+              <br />
+              เลขที่ 120 อาคารรวมหน่วยราชการ (อาคารรัฐประศาสนภักดี) ชั้น 6 และชั้น
+              <br />
+              7 ถนนแจ้งวัฒนะ แขวงทุ่งสองห้อง เขตหลักสี่ กรุงเทพฯ 10210
+            </p>
+            <p><b>เบอร์ติดต่อ:</b> 0-2141-4444, 0-2141-4468, 0-2141-4505</p>
+            <p><b>อีเมล:</b>GRI.SOC@GISTDA.OR.TH</p>
+          </div>
+    
+          <div class="second-info">
+            <!--<h4>Support</h4>
+              <p>ติอต่อ</p>
+              <p>เกี่ยวกับเว็บ</p>-->
+    
+    
+            <h4>Follow Us</h4>
+            <a href="https://www.facebook.com/gistda" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="https://twitter.com/gistda" target="_blank"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://www.instagram.com/gistda_space" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.youtube.com/c/GISTDAspace" target="_blank"><i class="bi bi-youtube"></i></a>
+          </div>
+    
+          <div class="map">
+            <h4>Map</h4>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3873.2854071216075!2d100.56183007487097!3d13.881875194269123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e2832ff601e93b%3A0x4adcb46a8124f677!2sGeo-Informatics%20and%20Space%20Technology%20Development%20Agency%20(GISTDA)!5e0!3m2!1sen!2sth!4v1708068905455!5m2!1sen!2sth"
+              width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="end-text">
+      <p>Copyright © @2024 GISTDA. All Rights Reserved.</p>
+    </div>
+    <a id="bottom"></a>
+
+  </body>
+  <script src="java.js"></script>
+</html>
