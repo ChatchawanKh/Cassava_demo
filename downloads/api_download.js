@@ -115,6 +115,7 @@ function createDownloadLink(url, text, iconClass) {
     link.style.border = "3px solid #111";
     link.style.padding = "2rem";
     link.style.borderRadius = "5px";
+    link.style.backgroundColor = "rgba(255, 245, 224, 0.7)";
     
     var icon = document.createElement("i");
     icon.className = iconClass;
@@ -132,14 +133,15 @@ function createDownloadLink(url, text, iconClass) {
 
     // Change text color on hover
     link.addEventListener("mouseenter", function() {
-        link.style.backgroundColor = "#43873C";
+        link.style.backgroundColor = "rgb(255, 159, 41)";
         link.style.color = "#fff"; 
         icon.style.color = "#fff";
     });
 
     // Reset color when not hovered
     link.addEventListener("mouseleave", function() {
-        link.style.backgroundColor = "transparent";
+        // link.style.backgroundColor = "transparent";
+        link.style.backgroundColor = "rgba(255, 245, 224, 0.7)";
         link.style.color = "#111"; 
         icon.style.color = "inherit";
     });
@@ -147,7 +149,8 @@ function createDownloadLink(url, text, iconClass) {
     link.addEventListener("click", function() {
         link.style.backgroundColor = "#ddd"; // Change background color when clicked
         setTimeout(function() {
-            link.style.backgroundColor = "transparent"; // Reset background color after a short delay
+            // link.style.backgroundColor = "transparent"; // Reset background color after a short delay
+            link.style.backgroundColor = "rgba(255, 245, 224, 0.7)";
         }, 200);
     });
     return link;
